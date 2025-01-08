@@ -35,7 +35,7 @@ const ChatbotUI = () => {
     try {
       // Make API call to get bot response
       // const response = await axios.post("http://localhost:8000/query", {
-      const response = await axios.post("https://426d-2409-40c4-4f-b317-7de4-ea33-d13a-80d0.ngrok-free.app/query", {
+      const response = await axios.post("https://1e31-152-58-59-52.ngrok-free.app/query", {
         messages: [
           ...messages.map((msg) => ({ role: msg.sender, content: msg.text })),
           { role: "user", content: userInput },
